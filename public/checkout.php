@@ -8,9 +8,6 @@
 
 
 
-
-
-
 <?php 
 
     if(isset($_SESSION['product_1'])) {  
@@ -19,11 +16,6 @@
     }
 ?>
 
- 
-<?php 
-    
-
-?>
 
     <!-- Page Content -->
     <div class="container">
@@ -47,7 +39,9 @@
           </tr>
         </thead>
         <tbody>
-           <?php cart(); ?>
+           <?php cart(); 
+              // This function displays the shopping cart. it is declared in the cart_func.php
+           ?>
         </tbody>
     </table>
 </form>
@@ -95,10 +89,7 @@
 
 <div class="col-xs-12 col-md-12">   
     <form action="pay.php">
-       <input type="hidden" name="item_name_{$item_name}" value="{$row['product_title']}">
-                          <input type="hidden" name="item_number_{$item_number}" value="{$row['product_id']}">
-                          <input type="hidden" name="amount_{$amount}" value="{$row['product_price']}">
-                          <input type="hidden" name="quantity_{$quantity} " value="{$value}">
+     
       <input type ="submit" class="btn btn-info btn-block" value="Checkout"> <br>
     </form>  
     

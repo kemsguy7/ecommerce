@@ -63,12 +63,12 @@
                                 <h4 class="pull-right">&#36;{$row['product_price']}</h4>
                                 <h4><a href="item.php?id={$row['product_id']}">{$row['product_title']}</a>
                                 </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                                <p>See more snippets like this online store item at <a target="_blank" href="httphttp://bootsnipp.com"></a>.</p>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">15 reviews</p> 
 
-                                <a class="btn btn-primary" target="_blank" href="cart.php?add={$row['product_id']}">Add to Cart</a>
+                                <a class="btn btn-primary" target="_blank" href="../resources/cart.php?add={$row['product_id']}">Add to Cart</a>
                               
                             </div>
                         </div>
@@ -135,11 +135,11 @@ DELIMETER;
                 <div class="thumbnail">
                     <img src="{$row['product_image']}" alt="">
                     <div class="caption">
-                        <h3>{$row['product_title']}</h3 >
+                        <h3>{$row['product_title']}</h3>
                         <p>Lorem Ipsum</p>
                         	<p class="block1">
-                            <a href="cart.php?id={$row['product_id']}" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p><br><br>
+                            <a href="cart.php?add={$row['product_id']}" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p><br><br>  
                     </div>
                 </div>
             </div>

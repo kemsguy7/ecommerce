@@ -2,25 +2,25 @@
 <!-- This script contains functions that controls the placement of items on th single items page -->
 
 <?php require_once("../resources/config.php"); ?>
-
+<?php require_once("../resources/functions.php"); ?>
 <?php include(TEMPLATE_FRONT .  "/header.php"); ?>
     <!-- Page Content -->
 <div class="container">
 
        <!-- Side Navigation -->
-        <?php include(TEMPLATE_FRONT . DS . "side_nav.php"); ?>
-<?php 
+    <?php include(TEMPLATE_FRONT . DS . "side_nav.php"); ?>
+    <?php 
 
-    $query = query("SELECT * FROM products WHERE product_id =" . escape_string($_GET['id']) . " " );
-    confirm($query);
+        $query = query("SELECT * FROM products WHERE product_id =" . escape_string($_GET['id']) . " " );
+        confirm($query);
 
-    while($row = fetch_array($query)) :
+        while($row = fetch_array($query)) :
 
-        echo $row['product_price'];
+            echo $row['product_price'];
 
-    
+        
 
-?>
+    ?>
 
           
 <div class="col-md-9">
@@ -63,9 +63,9 @@
         </p>
 
    
-    <form action="">
+    <form action=""> 
         <div class="form-group">
-            <input type="submit" class="btn btn-primary" value="ADD TO CART">
+            <a href="../resources/cart.php?add=<?php echo $row['product_id']; ?>" class="btn btn-primary">Add to Cart </a>
         </div>
     </form>
 

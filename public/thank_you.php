@@ -23,6 +23,9 @@ if(isset($_GET['tx'])) { //tx for transaction
   '{$currency}','{$transaction}', '{$status}')");
 
   confirm($query);
+
+  //After insertnig the order values into the thank you page, destroy the session
+  session_destroy();  
  
 } else {
 

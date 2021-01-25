@@ -19,9 +19,6 @@
  	
 
 
-
-
-
  ?>
 
  
@@ -33,12 +30,12 @@
   </head>
   <body>
   	<div class="container"> 
-  		<h2> <?php echo 'Hello,'.$email; ?>  </h2>
+  		<h2> <?php echo 'Hello,'.$email; ?>  
 
-  		<?php echo $_SESSION['amount'];
+  		<?php echo ($_SESSION['amount']);
   						 ?>
 
-  		<?php echo $item_number;
+  		<?php echo ($_SESSION['item_number']);
   						 ?>
   		
   		<?php echo $amount;
@@ -46,7 +43,7 @@
 
   		<?php echo $_SESSION['display_name'];
   						 ?>
-
+  		</h2>
 
   		<form>
   		<script src="https://js.paystack.co/v1/inline.js"> </script>

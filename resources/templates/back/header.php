@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
+<head>  
+ 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin</a>
+                <a class="navbar-brand" href="index.php">SB Admin</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -56,7 +56,7 @@
                        
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -65,106 +65,25 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                     <li>
+                        <a href="index.php?orders"><i class="fa fa-fw fa-dashboard"></i> Orders</a>
                     </li>
                     <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> View Products</a>
+                        <a href="index.php?product"><i class="fa fa-fw fa-bar-chart-o"></i> View Products</a>
                     </li>
                     <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Add Product</a>
-                    </li>
-                    
-                    <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Categories</a>
+                        <a href="index.php?add_product"><i class="fa fa-fw fa-table"></i> Add Product</a>
                     </li>
                     <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i>Orders</a>
+                        <a href="index.php?categories"><i class="fa fa-fw fa-desktop"></i> Categories</a>
+                    </li>
+                    <li>
+                        <a href="index.php?product"><i class="fa fa-fw fa-wrench"></i>Users</a>
                     </li>
                 
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </nav>
-
-
-
-        <div id="page-wrapper">
-
-            <div class="container-fluid">
-
-
-                
-
-
-        <div class="col-md-12">
-<div class="row">
-<h1 class="page-header">
-   All Orders
-
-</h1>
-</div>
-
-<div class="row">
-<table class="table table-hover">
-    <thead>
-
-      <tr>
-           <th>S.N</th>
-           <th>Title</th>
-           <th>Photo</th>
-           <th>Quantity</th>
-           <th>Invoice Number</th>
-           <th>Order Date</th>
-           <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>21</td>
-            <td>Nikon 234</td>
-
-            <td><img src="http://placehold.it/62x62" alt=""></td>
-            <td>Cameras</td>
-            <td>456464</td>
-            <td>Jun 2039</td>
-           <td>Completed</td>
-        </tr>
-        
-
-    </tbody>
-</table>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-            <!-- /.container-fluid -->
-
-        </div>
-        <!-- /#page-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
-
-</body>
-
-</html>
