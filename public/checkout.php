@@ -68,7 +68,7 @@
 
 <tr class="order-total">
 <th>Order Total</th>
-<td><strong><span class="amount"> &#36;
+<td><strong><span class="amount"> NGN
     <?php //subtotal
         echo isset($_SESSION['item_total']) ? $_SESSION['item_total'] : $_SESSION['item_total'] = "0";
     ?>

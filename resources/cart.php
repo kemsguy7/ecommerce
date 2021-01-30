@@ -1,7 +1,7 @@
 <!-- Configuration-->
 
-<?php require_once("../resources/config.php"); ?>
-<?php require_once("../resources/functions.php"); ?> 
+<?php require_once("config.php"); ?>
+<?php require_once("functions.php"); ?> 
 
 <?php 
   if(isset($_GET['add'])) { 
@@ -53,7 +53,7 @@
 
 
   if(isset($_GET['delete'])) { //delete functionality
-    $_SESSION['product_' . $_GET['delete']] = '0'; //if the delete button is  clicked, empty the shopping cart by setting it to 0, unset the subtotal and item_quantity
+    $_SESSION['product_' . $_GET['delete']] = '0'; //if the delete button is clicked, empty the shopping cart by setting it to 0, unset the subtotal and item_quantity
     //unset the sessions
     unset($_SESSION['item_total']);
     unset($_SESSION['item_quantity']);

@@ -6,14 +6,18 @@
 ob_start(); 
 
 //turn on sessions
-session_start();
+@session_start();
 
 //defining the directory seperator
 defined("DS") ? null : define("DS", DIRECTORY_SEPARATOR);
 
 defined("TEMPLATE_FRONT") ? null : define("TEMPLATE_FRONT", __DIR__ . DS . "templates/front");
 
+//Admin pages
 defined("TEMPLATE_BACK") ? null : define("TEMPLATE_BACK", __DIR__ . DS . "templates/back");
+
+//Image upload directory
+defined("UPLOAD_DIRECTORY") ? null : define("UPLOAD_DIRECTORY", __DIR__ . DS . "uploads/");
 /*
 echo TEMPLATE_FRONT;
 echo "<br/>";
